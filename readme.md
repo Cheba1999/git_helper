@@ -180,11 +180,13 @@ Git хеширует (преобразует) информацию о комми
 * git log
 
 Выводит текст следующего формата:
-"commit e83c5163316f89bfbde7d9ab23ca2e25604af290
+```
+commit e83c5163316f89bfbde7d9ab23ca2e25604af290
 Author: Linus Torvalds <torvalds@linux-foundation.org>
 Date:   Thu Apr 7 15:13:13 2005 -0700
 
-    Initial revision of "git", the information manager from hell"
+    Initial revision of "git", the information manager from hell
+```
 
 Разберём элементы, из которых состоит описание:
 
@@ -199,11 +201,13 @@ Date:   Thu Apr 7 15:13:13 2005 -0700
 
 
 Выводит текст следующего формата:
-"user@computer:~/dev/first-project$ git log --oneline
+```
+user@computer:~/dev/first-project$ git log --oneline
 e007f50 (HEAD -> master) Добавить амбиций в список дел
 090e96e Добавить описание проекта в readme
 baa3b6e Мой первый коммит!
-user@computer:~/dev/first-project$"
+user@computer:~/dev/first-project$
+```
 
 Сокращённый хеш (то есть первые несколько символов полного) можно использовать точно так же, как и полный.
 Для этого команда git log --oneline автоматически подбирает такую длину сокращённых хешей,
